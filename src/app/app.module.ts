@@ -15,20 +15,20 @@ import { routes } from './app.routes';
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    RouterOutlet
-  ],
-  providers: [
-    provideRouter(routes),
-    { provide: NZ_I18N, useValue: en_US }
-  ],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        HttpClientModule,
+        BrowserAnimationsModule,
+        RouterOutlet
+    ],
+    providers: [
+        provideRouter(routes),
+        { provide: NZ_I18N, useValue: en_US }
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
